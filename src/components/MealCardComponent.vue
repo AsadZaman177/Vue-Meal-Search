@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-xs overflow-hidden rounded-lg shadow-lg" v-for="meal of meals.meals" :key="meal.idMeal">
+    <div class="max-w-xs overflow-hidden rounded-lg shadow-lg" v-for="meal of meals" :key="meal.idMeal">
         <img class="object-cover w-full h-48" :src="meal.strMealThumb"/>
         <div class="px-6 py-4">
             <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">{{ meal.strMeal }}</h4>

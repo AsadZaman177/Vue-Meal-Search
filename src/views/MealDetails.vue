@@ -34,7 +34,6 @@
     onMounted(() => {
         axiosClient.get(`lookup.php?i=${id}`)
         .then(({ data }) => { 
-        console.log(data);
         meal.value = data.meals[0] || { };
         })
     })
